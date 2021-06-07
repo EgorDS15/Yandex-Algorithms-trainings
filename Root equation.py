@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Jun  4 11:54:37 2021
-
-@author: Овчинниковы
-"""
 
 # Решите в целых числах уравнение:
 
@@ -29,7 +24,7 @@ def solution(x):
     b = x[1]
     c = x[2]
     
-    if a >=0 and b >=0 and c>= 0:
+    if a >= 0 and b >= 0 and c >= 0:
         return int((c**2 / a) - (b / a))
     else:
         return 'NO SOLUTION'

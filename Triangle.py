@@ -6,17 +6,15 @@
 
 
 def is_triangle(x=(input('Введите три значения длинн сторон: '))):
-    lenghts = x.split(' ')
-    a = int(lenghts[0])
-    b = int(lenghts[1])
-    c = int(lenghts[2])
+    lengths = x.split(' ')
+    a = int(lengths[0])
+    b = int(lengths[1])
+    c = int(lengths[2])
     
     if a + b > c and a + c > b and b + c > a:
         return 'Да, с такими значениями можно построить треугольник!'
     else:
         return 'Нет, данные значения не подходят для построения треугольника!'
-
-    return lenghts
 
 
 print(is_triangle())

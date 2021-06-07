@@ -26,7 +26,7 @@ temp_2 = [11, 1, 1, 1, 1]
 temp_3 = [3, 2, 2, 2, 1]
 
 
-def adress(x):
+def address(x):
     # Номер квартиры вызвавшего скорую
     k1 = x[0]
     # Количество этажей в доме
@@ -61,8 +61,8 @@ def adress(x):
     return p1, n1
     
     
-print(adress(temp_1))
-print(adress(temp_2))
-print(adress(temp_3))
+print(address(temp_1))
+print(address(temp_2))
+print(address(temp_3))
 
 print('Время выполнения -', time.time() - start)

@@ -1,13 +1,6 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Jun  3 18:02:31 2021
 
-@author: Овчинниковы
-"""
-import time
-
-
-# Телефонные номера в адресной книге мобильного телефона имеют один из следующих 
+# Телефонные номера в адресной книге мобильного телефона имеют один из следующих
 # форматов: +7<код><номер> 8<код><номер> <номер> где <номер> — это семь цифр, а 
 # <код> — это три цифры или три цифры в круглых скобках. Если код не указан, то 
 # считается, что он равен 495. Кроме того, в записи телефонного номера может стоять 
@@ -29,7 +22,7 @@ import time
 # буквами), если он совпадает с тем телефонным номером, который Вася хочет 
 # добавить в адресную книгу или NO (заглавными буквами) в противном случае.
 
-
+import time
 
 test_1 = ['8(495)430-23-97', '+7-4-9-5-43-023-97', '4-3-0-2-3-9-7', '8-495-430']
 
@@ -46,14 +39,14 @@ def is_exist_phone_number(x):
     exists_phones_nums = x[1:]
     
     for i, _ in enumerate(exists_phones_nums):
-        exists_phones_nums[i] = exists_phones_nums[i].replace('(', '').replace(')', '').replace('-', '').replace('+7','8')
+        exists_phones_nums[i] = exists_phones_nums[i].replace('(',
+                                                              '').replace(')', '').replace('-', '').replace('+7','8')
         
     for number in exists_phones_nums:
         if new_phone_num == number:
             print('YES')
         else:
             print('NO')
-
 
     return 'End'
 

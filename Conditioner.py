@@ -53,13 +53,13 @@
 
 my_file = open('my_file.txt', 'r+')
 
-def new(x):
+
+def cond_settings(x):
     temperature = x.readline().split(' ')
     t_room = int(temperature[0])
     t_cond = int(temperature[1])
-    
+
     mode = x.readline()
-    
 
     if mode == 'freeze':
         if t_room >= t_cond:
@@ -75,7 +75,6 @@ def new(x):
         return t_cond
     elif mode == 'fan':
         return t_room
-    
-    
 
-print(new(my_file))
+
+print(cond_settings(my_file))
